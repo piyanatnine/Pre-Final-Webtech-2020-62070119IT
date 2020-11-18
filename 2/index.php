@@ -33,13 +33,13 @@
         <h4 class="mt-5">ระบุคำค้นหา</h4>
         <form method="POST">
             <div class="row mb-5">
-                <input name="word" class="col-7 m-3" type="text" value=" ">
+                <input name="word" class="col-7 m-3" type="text" value="">
                 <input class="col-3 m-3" type="submit" value="submit" name="submit">
             </div>
         </form>
 
     <?php
-    if (isset($_POST["submit"]) && ($_POST['word'] != " ")) {
+    if (isset($_POST["submit"]) && ($_POST['word'] != "")) {
         $value = $_POST['word'];
         $num2 = 0;
         echo "<div class='row'>";
